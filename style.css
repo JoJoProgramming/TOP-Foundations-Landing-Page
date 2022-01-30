@@ -1,24 +1,51 @@
-.page-structure
+body
 {
-    display: flex;
-    flex-flow: row nowrap;
+    background: lightgreen;
+    border: green solid 2px;
 }
 
-.column-1,
-.column-3
+.section-1-container
 {
-    /* flex: 1; */
-    border: #ffaa00 solid 2px;
-    background: black;
-    width: 25%;
-    height: 700px;
+    display:flex;
+    background: lightskyblue;
+    border: blue solid 2px;
+    width: 500px;
+    height: 200px;
 }
 
-.column-2
+.orange-box
 {
-    flex:1;
-    height: 250px;
-    width: 50%;
-    background: #00ffaa;
-    /* margin-left: 25%; */
+    background: lightsalmon;
+    border: orange solid 2px;
+}
+
+.red-box
+{
+    background: lightcoral;
+    border: red solid 2px;
+}
+
+.purple-box
+{
+    background: rgb(229, 180, 248)
+    border: purple solid 2px;
+}
+
+.section-1 .orange-box
+{
+    width: calc(500px/3);
+    height: calc(200px/.66%);
+    /* padding: 5px; */
+    margin: 5px;
+}
+
+.subsection-1-container
+{
+    display:flex;
+}
+
+.section-1 .red-box
+{
+    width: 20%;
+    height: 20%;
 }
