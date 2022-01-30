@@ -1,0 +1,24 @@
+.page-structure
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.column-1,
+.column-3
+{
+    /* flex: 1; */
+    border: #ffaa00 solid 2px;
+    background: black;
+    width: 25%;
+    height: 700px;
+}
+
+.column-2
+{
+    flex:1;
+    height: 250px;
+    width: 50%;
+    background: #00ffaa;
+    /* margin-left: 25%; */
+}
